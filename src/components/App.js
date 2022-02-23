@@ -78,8 +78,8 @@ class App extends Component {
             <Route exact path="/" render={() =><PhotoContainer data={this.state.photos} query='cats' loading={this.state.loading} photos={this.state.cats} />}/>
             <Route path="/cats" render={() => <PhotoContainer data={this.state.cats} query='cats' loading={this.state.loading} photos={this.state.cats} />}/>
             <Route path="/dogs" render={() => <PhotoContainer data={this.state.dogs} query='dogs' loading={this.state.loading} photos={this.state.dogs} />}/>
-            <Route path="/horses" render={() => <PhotoContainer data={this.state.horse} query='horses' loading={this.state.loading} photos={this.state.horses} />}/>
-            <Route component={NotFound}/>
+            <Route path="/horses" render={() => <PhotoContainer data={this.state.horses} query='horses' loading={this.state.loading} photos={this.state.horses} />}/>
+            <Route element={NotFound}/>
           </Switch>
         </div>
       </BrowserRouter>
