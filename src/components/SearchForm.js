@@ -16,7 +16,7 @@ class SearchForm extends Component {
         e.preventDefault();
         this.props.onSearch(this.state.searchText);
         e.currentTarget.reset();
-        this.props.history.push("/"); //external google resource
+        this.props.history.push("/"); //google
     }
     
     render() {
