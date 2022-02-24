@@ -2,6 +2,9 @@ import React from 'react';
 import Photo from './Photo';
 import NotFound from './NotFound';
 
+
+//current construction should display img and li in browser
+
 const PhotoContainer = (props) => {
 
     const results = props.data

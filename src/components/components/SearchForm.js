@@ -1,20 +1,22 @@
 import React, { Component } from 'react';
-import { withRouter } from 'react-router-dom';
+import { withRouter } from 'react-router-dom'; //looked at external google resources to help with this
 
 class SearchForm extends Component {
     state ={
         searchText: ''
     }
-
+    // show appropriate search results and errors
+    
     onSearchChange = e => {
         this.setState({ searchText: e.target.value });
     }
+
 
     handleSubmit = e => {
         e.preventDefault();
         this.props.onSearch(this.state.searchText);
         e.currentTarget.reset();
-        this.props.history.push("/");
+        this.props.history.push("/"); //external google resource
     }
     
     render() {
