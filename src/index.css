@@ -78,8 +78,8 @@ input {
   height: 165px;
   overflow: hidden;
   margin-bottom: 15px;
-  border: 1px solid #d7dbdf;
-  border-radius: 0.35em;
+  border: 3px solid #d7dbdf;
+  border-radius: 0.35em 0 0 0.35em;
 }
 
 .photo-container ul img {
@@ -94,7 +94,9 @@ input {
 
 .photo-container .not-found {
   width: 100%;
+  border: none;
 }
+
 
 @media only screen and (max-width: 767px)  {
   body {
