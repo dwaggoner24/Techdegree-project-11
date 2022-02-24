@@ -1,7 +1,8 @@
 body {
   text-align: center;
   font-family: 'Open Sans', sans-serif;
-  color: #3f4850;
+  color: #eaeff3;
+  background-color: #38434b;
 }
 
 h2 {
@@ -77,6 +78,8 @@ input {
   height: 165px;
   overflow: hidden;
   margin-bottom: 15px;
+  border: 1px solid #d7dbdf;
+  border-radius: 0.35em;
 }
 
 .photo-container ul img {
