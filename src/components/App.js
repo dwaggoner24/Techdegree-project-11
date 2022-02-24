@@ -18,7 +18,7 @@ const photoKey = apiKey;
 
 
 class App extends Component {
-
+  
   constructor() {
     super();
     this.state = {
@@ -38,6 +38,8 @@ class App extends Component {
     this.performSearch('horses');
   }
 
+
+  //searching queries to provide correct photos using if/else if statements
   performSearch = (query) => {
     axios.get(`https://www.flickr.com/services/rest/?method=flickr.photos.search&api_key=${photoKey}&tags=${query}&per_page=24&format=json&nojsoncallback=1`)
       .then(response => {
@@ -68,6 +70,8 @@ class App extends Component {
       });
   }
 
+
+  //component routes being using in project
   render() {
     return (
       <BrowserRouter>
