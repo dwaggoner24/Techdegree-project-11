@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { withRouter } from 'react-router-dom'; //looked at external google resources to help with this
+import { withRouter } from 'react-router-dom'; //googling resources helped with this section
 
 class SearchForm extends Component {
     state ={
@@ -16,7 +16,7 @@ class SearchForm extends Component {
         e.preventDefault();
         this.props.onSearch(this.state.searchText);
         e.currentTarget.reset();
-        this.props.history.push("/"); //google
+        this.props.history.push("/"); 
     }
     
     render() {
